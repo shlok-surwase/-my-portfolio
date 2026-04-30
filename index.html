@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shlok Praveen Surwase — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">SS</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="toggle-icon">☀</span>
+    </button>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+      <li><a href="#achievements" onclick="closeMobileMenu()">Achievements</a></li>
+      <li><a href="#gallery" onclick="closeMobileMenu()">Gallery</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="noise"></div>
+    <div class="hero-grid">
+      <div class="hero-left reveal">
+        <p class="hero-tag">// BBA Student | Aspiring Data Analyst | Future Product Manager</p>
+        <h1 class="hero-name">SHLOK<br><span>SURWASE</span></h1>
+        <p class="hero-bio">I am a BBA student with a strong interest in data analytics, product management, and the fintech industry. Focused on building practical skills through projects and continuous learning.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Certificates</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">BBA</span><span class="stat-label">Student</span></div>
+        </div>
+      </div>
+      <div class="hero-right reveal reveal-delay">
+        <div class="hero-img-wrap">
+          <img src="assets/profile2.png" alt="Shlok Praveen Surwase" class="hero-img"/>
+          <div class="hero-img-border"></div>
+          <div class="hero-badge">MIT VPU<br>BBA</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">WHO I AM</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-img-col reveal">
+          <img src="assets/profile.jpg" alt="Shlok Praveen Surwase" class="about-img"/>
+          <div class="about-img-label">Shlok Praveen Surwase</div>
+        </div>
+        <div class="about-content reveal reveal-delay">
+          <p class="about-intro">I am currently pursuing a <strong>Bachelor of Business Administration (BBA)</strong> at MIT Vishwapragya University. I have a keen interest in understanding how businesses operate and how data can be used to make better decisions. I am actively exploring the fields of <strong>data analytics, product management, and fintech</strong>, and I enjoy working on projects that help me gain practical knowledge.</p>
+
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="about-card-icon">🎓</div>
+              <div>
+                <h4>Education</h4>
+                <p>BBA — MIT Vishwapragya University (Currently Pursuing)<br>Higher Secondary (12th) — Completed</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🎯</div>
+              <div>
+                <h4>Goals</h4>
+                <p>To build strong skills in data analytics and product management, and specialize in fintech and data-driven business solutions.</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">⚡</div>
+              <div>
+                <h4>Strengths</h4>
+                <p>Analytical thinking, quick learner with a growth mindset, strong problem-solving approach, and adaptability to new tools.</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">💡</div>
+              <div>
+                <h4>Interests & Hobbies</h4>
+                <p>Sports, nature, strategy-based games, table tennis, and continuously learning new things.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="goals-section">
+            <h4 class="skills-title">My Goals</h4>
+            <ul class="goals-list">
+              <li><span class="goal-bullet">→</span> Build strong skills in data analytics and product management</li>
+              <li><span class="goal-bullet">→</span> Gain practical experience through projects and internships</li>
+              <li><span class="goal-bullet">→</span> Specialize in fintech and data-driven business solutions</li>
+              <li><span class="goal-bullet">→</span> Work in a role where I can solve real-world problems using data</li>
+              <li><span class="goal-bullet">→</span> Grow into a product manager or business leader</li>
+            </ul>
+          </div>
+
+          <div class="skills-wrap">
+            <h4 class="skills-title">Skills & Tools</h4>
+            <div class="skills-list">
+              <span class="skill-chip">Data Analytics</span>
+              <span class="skill-chip">Product Management</span>
+              <span class="skill-chip">Fintech</span>
+              <span class="skill-chip">Design Thinking</span>
+              <span class="skill-chip">Business Strategy</span>
+              <span class="skill-chip">AI / Modern AI</span>
+              <span class="skill-chip">Organizational Behavior</span>
+              <span class="skill-chip">Git / GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-tag">02 / Projects</span>
+        <h2 class="section-title">WHAT I'VE BUILT</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/project-roseai.png" alt="RoseAI Project"/>
+            <div class="project-overlay">
+              <span class="project-type">Ai4A Project</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>RoseAI</h3>
+            <p>An AI-powered web application that helps gardeners identify rose leaf diseases instantly using machine learning. Trained on thousands of real rose leaf images across 5 disease classes. Provides instant detection and treatment recommendations — no expertise required.</p>
+            <div class="project-tags">
+              <span>AI / ML</span><span>Web App</span><span>Ai4A Project</span><span>Design Thinking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay">
+          <div class="project-img-wrap">
+            <img src="assets/project-velocity.jpg" alt="Velocity Arena Project"/>
+            <div class="project-overlay">
+              <span class="project-type">Design Thinking Project</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Velocity Arena</h3>
+            <p>A high-octane website for a go-karting arena featuring premium dark aesthetics, immersive UI with kart class showcases, booking system, and dynamic race-day energy. Designed to convert visitors into bookings with bold typography and dramatic visuals.</p>
+            <div class="project-tags">
+              <span>HTML/CSS</span><span>JavaScript</span><span>UI/UX</span><span>Web Design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-tag">03 / Achievements</span>
+        <h2 class="section-title">CERTIFICATES & AWARDS</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-img-wrap">
+            <img src="assets/cert-cisco.jpg" alt="Cisco Netacad Certificate"/>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">Cisco Networking Academy (Netacad) × MIT VPU</span>
+            <h3>Introduction to Modern AI</h3>
+            <p>Completed a comprehensive course on modern Artificial Intelligence through the Cisco Networking Academy program, offered by MIT Vishwapragya University.</p>
+            <span class="cert-date">📅 16 Feb 2026</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal reveal-delay">
+          <div class="cert-img-wrap">
+            <img src="assets/cert-coursera.jpg" alt="Coursera Certificate"/>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">Coursera × IESE Business School</span>
+            <h3>Organizational Behavior: How to Manage People</h3>
+            <p>Successfully completed this online course authorized by IESE Business School, University of Navarra — gaining expertise in managing people and organizations effectively.</p>
+            <span class="cert-date">📅 Dec 7, 2025</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal reveal-delay2">
+          <div class="cert-img-wrap">
+            <img src="assets/cert-disha.jpg" alt="Disha Certificate"/>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">Disha Computer Institute — Solapur (ISO 9001:2008)</span>
+            <h3>Computer Hardware Concepts Workshop</h3>
+            <p>Participated in a hands-on workshop on Computer Hardware Concepts organized by Disha Computer Institute, Solapur Branch — building foundational hardware knowledge.</p>
+            <span class="cert-date">📅 Disha Computer Institute, Solapur</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-tag">04 / Gallery</span>
+        <h2 class="section-title">PHOTOS & CERTS</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large reveal" onclick="openLightbox('assets/profile2.png')">
+          <img src="assets/profile2.png" alt="Shlok Surwase"/>
+          <div class="gallery-hover">View ↗</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay" onclick="openLightbox('assets/profile.jpg')">
+          <img src="assets/profile.jpg" alt="Shlok Surwase"/>
+          <div class="gallery-hover">View ↗</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay2" onclick="openLightbox('assets/project-roseai.png')">
+          <img src="assets/project-roseai.png" alt="RoseAI Project"/>
+          <div class="gallery-hover">View ↗</div>
+        </div>
+        <div class="gallery-item reveal" onclick="openLightbox('assets/project-velocity.jpg')">
+          <img src="assets/project-velocity.jpg" alt="Velocity Arena"/>
+          <div class="gallery-hover">View ↗</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay" onclick="openLightbox('assets/cert-cisco.jpg')">
+          <img src="assets/cert-cisco.jpg" alt="Cisco Netacad Certificate"/>
+          <div class="gallery-hover">View ↗</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay2" onclick="openLightbox('assets/cert-coursera.jpg')">
+          <img src="assets/cert-coursera.jpg" alt="Coursera Certificate"/>
+          <div class="gallery-hover">View ↗</div>
+        </div>
+        <div class="gallery-item reveal" onclick="openLightbox('assets/cert-disha.jpg')">
+          <img src="assets/cert-disha.jpg" alt="Disha Certificate"/>
+          <div class="gallery-hover">View ↗</div>
+        </div>
+      </div>
+    </div>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <img id="lightboxImg" src="" alt="Gallery image"/>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-tag">05 / Contact</span>
+        <h2 class="section-title">LET'S CONNECT</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <p class="contact-intro">I'm open to internships, collaborations, and interesting projects in data analytics, product management, and fintech. Reach out anytime — let's build something great together.</p>
+          <div class="contact-links">
+            <a href="mailto:gmail.surwaseshlok@gmail.com" class="contact-link">
+              <span class="contact-icon">✉</span>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-val">gmail.surwaseshlok@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/shlok-surwase" target="_blank" class="contact-link">
+              <span class="contact-icon">GH</span>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-val">github.com/shlok-surwase</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/shlok-surwase-914209380" target="_blank" class="contact-link">
+              <span class="contact-icon">in</span>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-val">linkedin.com/in/shlok-surwase</span>
+              </div>
+            </a>
+            <a href="tel:+917972686940" class="contact-link">
+              <span class="contact-icon">☏</span>
+              <div>
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-val">+91 79726 86940</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal reveal-delay">
+          <div class="contact-form-wrap">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <input type="text" id="fname" placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <input type="email" id="femail" placeholder="Your Email" />
+            </div>
+            <div class="form-group">
+              <textarea id="fmessage" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button class="btn-primary full-width" onclick="handleFormSubmit()">Send Message →</button>
+            <p class="form-note" id="formNote"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">SS</div>
+      <p>© 2026 Shlok Praveen Surwase — MIT Vishwapragya University</p>
+      <p class="footer-sub">Built with HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
